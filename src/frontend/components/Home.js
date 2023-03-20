@@ -41,7 +41,8 @@ const Home = ({ marketplace, nft }) => {
 
   useEffect(() => {
     loadMarketplaceItems()
-  }, [])
+  }, [loadMarketplaceItems]) // add loadMarketplaceItems to the dependency array
+
   if (loading) return (
     <main style={{ padding: "1rem 0" }}>
       <h2>Loading...</h2>
